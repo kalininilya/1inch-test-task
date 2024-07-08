@@ -55,7 +55,6 @@ export default function Home() {
   const [gasLimitService, setGasLimitService] =
     useState<GasLimitService | null>(null);
   const [balances, setBalances] = useState<TokenBalance[]>([]);
-  const [isAddressValid, setIsAddressValid] = useState<boolean>(true);
   const [isTransactionDialogOpen, setIsTransactionDialogOpen] =
     useState<boolean>(false);
   const [isSettingsDialogOpen, setIsSettingsDialogOpen] =
@@ -180,7 +179,6 @@ export default function Home() {
   const handleAddressChange = (e: ChangeEvent<HTMLInputElement>) => {
     const newAddress = e.target.value;
     setAddress(newAddress);
-    setIsAddressValid(ethers.utils.isAddress(newAddress));
     if (ethers.utils.isAddress(newAddress)) {
       fetchBalances(newAddress);
     }
