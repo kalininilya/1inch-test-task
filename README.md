@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Deployament https://1inch-test-task-blush.vercel.app/
+## Deployment https://1inch-test-task-blush.vercel.app/
 
 First, run the development server:
 
